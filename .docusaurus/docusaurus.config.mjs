@@ -57,6 +57,20 @@ export default {
       }
     ]
   ],
+  "themes": [
+    [
+      "@cmfcmf/docusaurus-search-local",
+      {
+        "indexDocs": true,
+        "indexBlog": false,
+        "indexPages": false,
+        "language": [
+          "es",
+          "en"
+        ]
+      }
+    ]
+  ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "colorMode": {
@@ -71,6 +85,10 @@ export default {
         "src": "img/logo.svg"
       },
       "items": [
+        {
+          "type": "search",
+          "position": "right"
+        },
         {
           "href": "https://github.com/facebook/docusaurus",
           "label": "GitHub",
@@ -359,7 +377,6 @@ export default {
   ],
   "customFields": {},
   "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],

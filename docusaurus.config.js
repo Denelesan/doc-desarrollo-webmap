@@ -76,6 +76,21 @@ const config = {
     ],
   ],
 
+  themes: [
+  [
+    '@cmfcmf/docusaurus-search-local',
+    {
+      indexDocs: true,
+      indexBlog: false,
+      indexPages: false,
+      
+      language: ['es', 'en'],
+      //highlightSearchTermsOnTargetPage: true,
+      //searchResultLimits: 8,
+    },
+  ],
+],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -101,6 +116,10 @@ const config = {
           //   label: 'Blog',
           //   position: 'left'
           // },
+          {
+          type: 'search',
+          position: 'right',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
