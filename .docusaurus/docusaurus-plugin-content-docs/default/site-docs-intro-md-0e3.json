@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "Introducción",
+  "description": "El presente documento tiene por objetivo definir un marco de trabajo mínimo estandarizado para el desarrollo de mapas web en la Sección de Georreferenciación, con el fin de asegurar coherencia, calidad y sostenibilidad en los productos que se desarrollen e implementen.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Flujo de trabajo y ciclo de desarrollo",
+    "permalink": "/category/flujo-de-trabajo-y-ciclo-de-desarrollo"
+  }
+}

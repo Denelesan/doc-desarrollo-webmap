@@ -1,0 +1,27 @@
+{
+  "id": "diseño/descripcion",
+  "title": "Descripción",
+  "description": "",
+  "source": "@site/docs/2-diseño/descripcion.md",
+  "sourceDirName": "2-diseño",
+  "slug": "/diseño/descripcion",
+  "permalink": "/diseño/descripcion",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/2-diseño/descripcion.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Diseño Base y Lineamientos de interfaz",
+    "permalink": "/category/diseño-base-y-lineamientos-de-interfaz"
+  },
+  "next": {
+    "title": "Tutorial - Basics",
+    "permalink": "/category/tutorial---basics"
+  }
+}

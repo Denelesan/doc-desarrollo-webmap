@@ -1,0 +1,27 @@
+{
+  "id": "Flujo-de-trabajo/create-a-page",
+  "title": "Descripción",
+  "description": "",
+  "source": "@site/docs/Flujo-de-trabajo/create-a-page.md",
+  "sourceDirName": "Flujo-de-trabajo",
+  "slug": "/Flujo-de-trabajo/create-a-page",
+  "permalink": "/Flujo-de-trabajo/create-a-page",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Flujo-de-trabajo/create-a-page.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Flujo de trabajo y ciclo de desarrollo",
+    "permalink": "/category/flujo-de-trabajo-y-ciclo-de-desarrollo"
+  },
+  "next": {
+    "title": "Tutorial - Basics",
+    "permalink": "/category/tutorial---basics"
+  }
+}
