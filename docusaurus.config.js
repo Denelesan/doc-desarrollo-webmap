@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Marco de Trabajo para el Desarrollo de Mapas WEB',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-serviu-sitio.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -103,7 +103,7 @@ const config = {
         title: 'Marco de Trabajo para el Desarrollo de Mapas WEB',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-serviu-sitio.png',
         },
         items: [
           // {
@@ -117,17 +117,21 @@ const config = {
           //   position: 'left'
           // },
           {
+          type: 'docsVersionDropdown',
+          position: 'right'
+          },
+          {
           type: 'search',
           position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Denelesan/doc-desarrollo-webmap',
             label: 'GitHub',
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'Redit',
+            href: 'http://10.13.5.72/serviu/',
+            label: 'REDIT',
             position: 'right',
           },
         ],

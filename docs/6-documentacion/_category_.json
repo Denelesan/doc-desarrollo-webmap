@@ -1,0 +1,8 @@
+{
+  "label": "Documentación Mínima",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentación obligatoria por cada desarrollo de mapas, además del formato de la documentación, ubicación y políticas de actualización."
+  }
+}

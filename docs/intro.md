@@ -26,14 +26,14 @@ Actualmente, la Sección de Georreferenciación cuenta con distintas soluciones 
 **Mapas desarrollados en ArcGIS Online**: 
 Si bien permiten una visualización rápida de la información, su uso se encuentra restringido por no contar con administración completa de la plataforma. A esto se suma la dependencia del consumo de créditos para funcionalidades avanzadas y la imposibilidad de integrar información publicada en GeoServer de forma dinámica y en tiempo real. 
 
-
+![ArcGis Map Image](./img/ArcGIS.png)
 
  
 
 **Mapas desarrollados en OpenLayers por un proveedor externo**: 
 Estos productos cumplen parcialmente con los requerimientos técnicos, ya que consumen servicios WFS; sin embargo, presentan una usabilidad deficiente, una interfaz poco amigable y una baja capacidad de adaptación a nuevos requerimientos, lo que ha limitado su uso y masificación. 
 
- 
+ ![OpenLayer Map Image](./img/OpenLayer.png)
 
  
 

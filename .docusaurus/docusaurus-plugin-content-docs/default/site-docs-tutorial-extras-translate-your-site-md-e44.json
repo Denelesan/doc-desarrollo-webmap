@@ -19,5 +19,9 @@
   "previous": {
     "title": "Manage Docs Versions",
     "permalink": "/tutorial-extras/manage-docs-versions"
+  },
+  "next": {
+    "title": "Consumo de Servicios Geoespaciales (GeoServer)",
+    "permalink": "/category/consumo-de-servicios-geoespaciales-geoserver"
   }
 }

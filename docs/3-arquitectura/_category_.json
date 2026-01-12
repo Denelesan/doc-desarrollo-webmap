@@ -1,0 +1,8 @@
+{
+  "label": "Arquitectura y Estructura de Desarrollo",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Estructura técnica del proyecto; organización de carpetas, patrones de estructura, manejo de estados, composición de componentes del mapa, como manejar configuraciones de variables sensibles y manejo de errores"
+  }
+}

@@ -6,7 +6,7 @@
 export default {
   "title": "Marco de Trabajo para el Desarrollo de Mapas WEB",
   "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/logo-serviu-sitio.png",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -82,21 +82,27 @@ export default {
       "title": "Marco de Trabajo para el Desarrollo de Mapas WEB",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "src": "img/logo-serviu-sitio.png"
       },
       "items": [
+        {
+          "type": "docsVersionDropdown",
+          "position": "right",
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
+        },
         {
           "type": "search",
           "position": "right"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/Denelesan/doc-desarrollo-webmap",
           "label": "GitHub",
           "position": "right"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "Redit",
+          "href": "http://10.13.5.72/serviu/",
+          "label": "REDIT",
           "position": "right"
         }
       ],

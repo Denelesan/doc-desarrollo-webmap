@@ -1,0 +1,8 @@
+{
+  "label": "Stack Tecnológico recomendado",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Librerías de mapas, bibliotecas UI, herramientas, políticas de actualización del stack, etc."
+  }
+}

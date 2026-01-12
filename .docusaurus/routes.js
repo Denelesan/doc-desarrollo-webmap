@@ -54,19 +54,43 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '1cc'),
+    component: ComponentCreator('/', 'b7c'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', 'c25'),
+        component: ComponentCreator('/', '2f9'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '969'),
+            component: ComponentCreator('/', '7fe'),
             routes: [
+              {
+                path: '/arquitectura/descripcion',
+                component: ComponentCreator('/arquitectura/descripcion', 'bf5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/category/arquitectura-y-estructura-de-desarrollo',
+                component: ComponentCreator('/category/arquitectura-y-estructura-de-desarrollo', '94d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/category/consumo-de-servicios-geoespaciales-geoserver',
+                component: ComponentCreator('/category/consumo-de-servicios-geoespaciales-geoserver', '3ae'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/category/diseño-base-y-lineamientos-de-interfaz',
                 component: ComponentCreator('/category/diseño-base-y-lineamientos-de-interfaz', 'a24'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/category/documentación-mínima',
+                component: ComponentCreator('/category/documentación-mínima', 'e3a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -77,14 +101,8 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/category/tutorial---basics',
-                component: ComponentCreator('/category/tutorial---basics', 'd94'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/category/tutorial---extras',
-                component: ComponentCreator('/category/tutorial---extras', '681'),
+                path: '/category/stack-tecnológico-recomendado',
+                component: ComponentCreator('/category/stack-tecnológico-recomendado', '6b6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -95,56 +113,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/documentacion/descripcion',
+                component: ComponentCreator('/documentacion/descripcion', 'bd7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/flujo-de-trabajo/descripcion',
                 component: ComponentCreator('/flujo-de-trabajo/descripcion', 'c4d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/tutorial-basics/congratulations',
-                component: ComponentCreator('/tutorial-basics/congratulations', 'e78'),
+                path: '/servicios/descripcion',
+                component: ComponentCreator('/servicios/descripcion', '90a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/tutorial-basics/create-a-blog-post', '594'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-basics/create-a-document',
-                component: ComponentCreator('/tutorial-basics/create-a-document', '843'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-basics/create-a-page',
-                component: ComponentCreator('/tutorial-basics/create-a-page', '168'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/tutorial-basics/deploy-your-site', 'a31'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-basics/markdown-features',
-                component: ComponentCreator('/tutorial-basics/markdown-features', 'b36'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/tutorial-extras/manage-docs-versions', '3b5'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/tutorial-extras/translate-your-site', 'cae'),
+                path: '/stack-tecnologico/descripcion',
+                component: ComponentCreator('/stack-tecnologico/descripcion', 'eb3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
