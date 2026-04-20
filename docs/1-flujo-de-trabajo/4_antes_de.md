@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Antes de Programar
@@ -11,7 +11,7 @@ Para ello, el responsable principal del proyecto deberá crear y/o completar un 
 Este documento se conocerá como el *Brief* del proyecto, el cual, se nombrará de la siguiente forma: `brief-name-web-map.doc`. 
 Por ejemplo, para un Mapa Web de la Red Geodésica, el nombre del archivo *Brief* del proyecto será `brief-mapa-red-geodesica.doc`.
 
-> El encargado de la Sección de Georreferenciación contará con un *template* para facilitar su completado.
+> El *template* del *Brief* se encontrará alojado en el repositorio base para la generación de mapas web, el cual se informa en el [Capítulo Preparación del Proyecto](./preparacion#2-código-base-del-proyecto)
 
 Este documento no busca ser extenso ni técnico, sino funcional y claro. La estructura de este documento se compone de las siguientes secciones:
 

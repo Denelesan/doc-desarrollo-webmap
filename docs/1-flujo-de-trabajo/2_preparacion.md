@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Preparación del Proyecto
@@ -114,8 +114,8 @@ El flujo de trabajo recomendado es crear primero el repositorio en GitHub y lueg
    - **Description**: Breve descripción del mapa web
    - **Visibility**: Seleccionar **Private**
    - **Initialize this repository with**:
-     - ✅ Marcar **"Add a README file"**
-     - ✅ Seleccionar **".gitignore template"** según el stack tecnológico (por ejemplo, Node, Python, etc.)
+     - ⬜ No¡ Marcar **"Add a README file"**
+     - ⬜ NO¡ Seleccionar **".gitignore template"**
      - ⬜ License (opcional)
 4. Hacer clic en **"Create repository"**
 
@@ -144,28 +144,59 @@ webmap-[nombre-proyecto]
 - `webmap_cruces`(guion bajo)
 - `mapa-pavimentos`(falta prefijo webmap)
 
-----
-## 2. Clonación del repositorio y carpeta raíz
-
-Una vez creado el repositorio en GitHub, cada desarrollador debe clonarlo en su máquina local para comenzar a trabajar.
-
-### Clonar el repositorio
+### URL del repositorio
 
 **Obtener la URL del repositorio**:
 
 - En la página del repositorio en GitHub, hacer clic en el botón verde "Code"
 - Copiar la URL HTTPS que aparece (por ejemplo: https://github.com/usuario/webmap-proyecto.git)
 
-### Clonar en tu máquina local:
+----
 
-Abrir la terminal (CMD, PowerShell, Terminal) y navegar hasta la ubicación donde deseas guardar el proyecto. Luego ejecutar:
+## 2. Código base del proyecto
+Todos los proyectos de mapas web de la Sección de Georreferenciación deben partir desde un código base común. Este código base es una plantilla que incluye:
+
+- Estructura de carpetas estandarizada
+- Configuración básica del mapa (Leaflet inicializado)
+- Funcionalidades esenciales comunes (zoom, controles básicos)
+- Estilos institucionales predefinidos
+- Elementos de interfaz base (header, footer, panel lateral)
+
+Las definiciones y detalles de este código base se encuentran en el [capítulo N°5: Diseño Base y Lineamientos de Interfaz](../category/diseño-base-y-lineamientos-de-interfaz)
+
+### Obtener el código base
+El código base se encuentra disponible en el repositorio de la Sección de Georreferenciación
 ```bash:
-git clone https://github.com/usuario/webmap-proyecto.git
+[URL del repositorio de con el código base]
 ```
 
-Esto creará automáticamente una carpeta con el nombre del repositorio que contiene todos los archivos del proyecto.
+**Formas de obtenerlo**:
 
-#### Ubicación del repositorio
+**Opción A: Clonar y renombrar**
+
+Abrir la terminal (CMD, PowerShell, Terminal) y navegar hasta la ubicación donde deseas guardar el proyecto. Luego ejecutar:
+
+```bash:
+# Clonar el repositorio base (cada desarrollador debe clonarlo en su máquina local para comenzar a trabajar.)
+git clone [URL-codigo-base] webmap-nombre-proyecto
+
+# Entrar a la carpeta
+cd webmap-nombre-proyecto
+
+# Cambiar el origen remoto al nuevo proyecto
+git remote remove origin
+git remote add origin [webmap-nombre-proyecto.git]
+
+# Subir la base inicial
+git push -u origin main
+```
+
+**Opción B: Descargar y copiar**
+1. Descargar el código base como ZIP desde GitHub
+2. Extraer en la carpeta del nuevo proyecto
+3. Inicializar Git y hacer el primer commit
+
+### Ubicación del repositorio
 
 Cada desarrollador puede elegir su propia ubicación local según su sistema operativo y preferencias personales. 
 
@@ -178,8 +209,7 @@ Ejemplos comunes:
 > No se exigirá alojar, en la etapa de desarrollo, el espacio de trabajo en alguna ruta del servidor o sharepoint de la Sección de Georreferenciación.
 
 ### Verificar la clonación
-
-Para confirmar que el repositorio se clonó correctamente:
+Para confirmar que el repositorio se clonó o creó correctamente:
 
 **Navegar a la carpeta del proyecto**:
 
@@ -197,9 +227,54 @@ Para confirmar que el repositorio se clonó correctamente:
 
 ```bash:
    git remote -v
+
+//Deberías ver la URL del repositorio en GitHub como origen remoto.
 ```
 
-Deberías ver la URL del repositorio en GitHub como origen remoto.
+### Estructura del código base
+
+El código base incluye la siguiente estructura:
+
+```bash:
+📁 webmap-proyecto/
+├── 📁 css/
+│   ├── 📄 styles.css          # Estilos generales
+│   └── 📄 institucional.css   # Estilos institucionales
+├── 📁 js/
+│   ├── 📄 config.js           # Configuraciones
+│   ├── 📄 map.js              # Inicialización del mapa
+│   └── 📄 utils.js            # Funciones auxiliares
+├── 📁 data/
+│   └── 📄 .gitkeep            # Para mantener carpeta en Git
+├── 📁 img/
+│   └── 📄 logo.png            # Logo institucional
+├── 📁 docs/
+│   └── 📄 brief-proyecto.md   # Brief del proyecto
+├── 📄 index.html              # Página principal
+├── 📄 README.md               # Documentación
+├── 📄 .gitignore              # Archivos a ignorar
+```
+
+### Personalizar el código base
+
+Una vez obtenido el código base, personalizarlo según el proyecto:
+
+1. **Actualizar `config.js`** con configuraciones específicas:
+   - Coordenadas iniciales del mapa
+   - Nivel de zoom inicial
+   - Límites geográficos del mapa
+   - Configuraciones de capas
+
+2. **Actualizar `index.html`**:
+   - Título del proyecto
+   - Metadatos
+   - Descripción
+
+3. **Actualizar `README.md`** con información del proyecto específico
+
+4. **Completar `brief-proyecto.md`** con los detalles del mapa a desarrollar
+
+> **Importante:** NO modificar la estructura base de carpetas ni eliminar archivos del código base sin consultar con la jefatura.
 
 -----
 
@@ -245,12 +320,12 @@ Breve descripción del mapa web, su propósito y funcionalidad principal.
 En desarrollo
 ```
 
-### Agregar el Brief del proyecto
+### Completar el Brief del proyecto
 
-El Brief completado debe incluirse en el repositorio para que todo el equipo tenga acceso a la información contextual del proyecto:
+El Brief debe completarse en el repositorio para que todo el equipo tenga acceso a la información contextual del proyecto, según lo definido en el [Sub-capítulo: Antes de Programar](./antes_de):
 
-1. Copiar el archivo `brief-proyecto.md` completado a la carpeta raíz del repositorio
-2. Alternativamente, puede crearse una carpeta `docs/` y almacenarlo allí:
+1. Completar el archivo `brief-proyecto.md` ubicado en la carpeta `docs/` del repositorio
+
 ```
    📁 webmap-nombreproyecto/
    ├── 📄 README.md

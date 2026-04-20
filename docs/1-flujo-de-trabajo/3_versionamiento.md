@@ -1,11 +1,9 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Flujo del control de versiones (Git y GitHub)
 
-
-## Introducción
 
 El control de versiones no solo permite guardar el historial de cambios del código, sino que también facilita el trabajo colaborativo entre los miembros del equipo. Este capítulo define el flujo de trabajo con Git y GitHub que utilizará la Sección de Georreferenciación para desarrollar mapas web de forma ordenada y segura.
 
